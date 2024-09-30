@@ -18,4 +18,4 @@ En el primer tema vamos a trabajar con el lenguage MARKDOWN que es un lenguage s
 4. Establecer enlaces como [este](https://youtu.be/dQw4w9WgXcQ?feature=shared)
 
 
-**Ejemplo negrita N**
+**Ejemplo negrita NU**
