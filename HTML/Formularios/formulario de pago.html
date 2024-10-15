@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pago</title>
+</head>
+<body>
+<fieldset> <br>
+    <legend>FORMULARIO DE PAGO (Los campos obligatorios se han marcado con un *)</legend>
+    <fieldset>
+        <legend>Información de contacto</legend>
+    <fieldset>
+        <legend>Profesión</legend>
+        <input type="radio" name="Lenguage" id="">Profesor/a <br>
+        <input type="radio" name="Lenguage" id="">Estudiante <br>
+        <input type="radio" name="Lenguage" id="">Otro <br>
+    </fieldset>
+    <fieldset>
+        <legend>Tratamiento</legend>
+        <input type="radio" name="Lenguage" id="">Sr/Sra <br>
+        <input type="radio" name="Lenguage" id="">Dr/Dra <br>
+        <input type="radio" name="Lenguage" id="">Otro <br>
+    </fieldset>
+        <label for="">Nombre: *</label> <br>
+        <input type="text" name="DNI" id=""> <br>
+        <label for="email">Correo: *</label> <br>
+        <input type="email" id="email" name="email"> <br>
+        <label for="">Número de teléfono: *</label> <br>
+        <input type="text" name="DNI" id=""> <br>
+        <label for="pwd">Contraseña: *:</label><br>
+        <input type="password" id="pwd" name="pwd">
+    </fieldset>
+    <fieldset>
+        <legend>Información de pago</legend>
+       Tipo de tarjeta: <select name="pago" id="">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="American Express">American Express</option>
+            </select> <br>
+        <label for="">Número de tarjeta: *</label> <br>
+        <input type="text" name="ntarjeta" id=""> <br>
+        Fecha de caducidad: * <br>
+        <input type="date" name="fecha" id="" value="dd/mm/aaaa">
+        <label for="">Cuenta de paypal: *</label> <br>
+        <input type="text" name="cuentapaypal" id=""> <br>
+        Método de pago preferido: <select name="mpago" id=""></select>
+            <option value="tarjeta de crédito">Tarjeta de crédito</option>
+            <option value="paypal">Paypal</option>
+            </select> <br>
+    </fieldset>
+</fieldset>
+</body>
+</html>
