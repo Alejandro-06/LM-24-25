@@ -1,0 +1,10 @@
+div {
+    background-color: red;
+    text-align: center;
+  }    
+
+h3.resaltado
+  {
+    background-color: yellow;
+    font-style: italic;
+  }

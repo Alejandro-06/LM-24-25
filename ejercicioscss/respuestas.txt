@@ -1,0 +1,23 @@
+Ejercicio 1: Que el metodo en la propia linea es un poco tonteria ya que pierda la funcionalidad principal del css (separar información de aspecto).
+El metodo interno esta bien y me parece que cumple bien su cometido a parte de ser facil de usar.
+El metodo externo es el más conveniente ya que puedes separar por completo información de aspecto, pero es un poco más enrevesado de usar.
+
+La ventaja que le veo al CSS externo frente a los otros es que separas por completo información de aspecto.
+
+
+
+Ejercicio 2: Usaría una clase en vez de un Id porque la clase es para referirse a un grupo de elementos y el Id solo para referirse a uno en específico.
+
+Si cambiaras el h2 en el CSS lo que ocurriria que todos los h2 ya no tendrian el aspecto descrito en el style.
+
+
+
+Ejercicio 3: Que para alinear en html hace falta escribir dentro del propio parrafo la alineación y con CSS pues hacerlo por separado.
+
+Yo en lo personal no tocaría el padding y lo dejaría por defecto, porque más grande o más pequeño quedaría feo.
+
+
+
+Ejercicio 4: Porque nos permite separar la información por partes lo cual puede resultar útil tanto para organizarla como para aplicar estilos a partes concretas de una forma más general.
+
+Dependiendo de que estructura tenga una cosa como por ejemplo un titulo que tiene estructura h1 tendras que especificar su estructura a la hora de seleccionar.
