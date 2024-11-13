@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: rgb(255, 233, 230);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .lista {
+            list-style: none;
+            padding-left: 0px;
+        }
+        .opcion {
+            border: 5px solid white;
+            border-radius: 3px;
+            background: rgb(219, 219, 219);
+            margin: 4px;
+            text-align: center;
+        }
+        .opciones {
+            float: none;
+            width: auto;
+        }
+        .texto{
+            overflow: auto;
+        }
+        @media screen and (min-width: 480px) {
+        .opciones {text-align: center; float: right;}}
+    </style>
+</head>
+<body>
+    <div class="opciones">
+        <ul class="lista">
+            <li class="opcion">W3School</li>
+            <li class="opcion">Aprende Html</li>
+            <li class="opcion">Aprende CSS</li>
+            <li class="opcion">Referencia Mozilla</li>
+            <li class="opcion">Trucos CSS</li>
+        </ul>
+    </div>
+    <div class="texto">
+    <h1>Aprende HTML y CSS</h1>
+    Redimensiona la pantalla para visualizarla en diferentes tamaños. Observa como cambia el menú para adaptarse a los diferentes tamaños de pantalla.
+    <br><br>
+    Pulsa imprimir la página para ver la previsualización, observa cómo cambia la tipografía y desaparece el menú.
+    </div>
+</body>
+</html>
