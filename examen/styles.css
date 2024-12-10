@@ -1,0 +1,74 @@
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f0f0f0; 
+    --text-color: #333;
+    --highlight-color: #ff5722;
+    --nav-bg-color: #222;
+  }
+  body{
+    font-family: 'Poppins';
+    background-color: var(--secondary-color);
+    min-height: 100vh;
+    color: var(--text-color);
+    margin: 0px
+  }
+  header{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    background-color: var(--primary-color);
+  }
+  nav{
+    display: flex;
+    background-color: var(--nav-bg-color);
+    position: sticky;
+    color: white;
+    justify-content: space-around;
+  }
+  .opcion:hover{
+    background-color: var(--highlight-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-delay: 0.2s;
+  }
+  .ee {
+    text-decoration: none;
+    color:white
+}
+  .ep {
+    text-decoration: none;
+    color:var(--highlight-color)
+}
+.ep:hover {
+    text-decoration:underline;
+    color:var(--highlight-color)
+}
+aside{
+    background-color: var(--primary-color);
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+p::first-letter{
+    color: red;
+    font-size: 30px;
+}
+footer{
+    background-color: var(--nav-bg-color);
+    color: white;
+    text-align: center;
+}
+.cajaenlaces{
+ display: flex;
+ justify-content: center;
+ color: var(--highlight-color);
+}
+.enlaces{
+    margin: 1rem;
+}
+.pegajoso{
+    position: sticky;
+    top: 0;
+}
