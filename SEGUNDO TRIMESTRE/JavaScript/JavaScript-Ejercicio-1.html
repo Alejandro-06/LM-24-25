@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 6</title>
+    <script src="circulos.js"></script>
+<style>
+    #rojo {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    }
+    #verde {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: green;
+    }
+    #azul {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    }
+    #contenedor {
+    display: flex;
+    justify-content: space-around;
+    }
+</style>
+</head>
+    <body>
+    <h1>Utilidades de JavaScript</h1>
+    <div class="contenedor">
+    <div id="rojo"></div>
+    <div id="verde"></div>
+    <div id="azul"></div>
+    </div>
+    <div>
+    <button onclick="ocultar('rojo')">Ocultar</button>
+    <button onclick="ocultar('verde')">Ocultar</button>
+    <button onclick="ocultar('azul')">Ocultar</button>
+    </div>
+    <div>
+    <button onclick="mostrar('rojo')">Mostrar</button>
+    <button onclick="mostrar('verde')">Mostrar</button>
+    <button onclick="mostrar('azul')">Mostrar</button>
+    </div>
+</body>
+</html>
