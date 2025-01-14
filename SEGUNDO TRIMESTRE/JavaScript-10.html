@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversir de grados</h1>
+    <input type="text" id="grados">
+    <button onclick="convertir_a_celcius()">Covertir a Celcius</button>
+    <button onclick="convertir_a_farenheit()">Convertir a Farenheit</button>
+    <p id="resultado"></p>
+    <script>
+        function convertir_a_celcius(){
+            let grados = parseFloat(document.getElementById("grados").value);
+            let resultado = (grados-32)/1.8;
+            if(isNaN(resultado)){
+            document.getElementById("resultado").innerHTML = "No es un numero";
+            }
+            else
+            {
+            document.getElementById("resultado").innerHTML = "La conversión a celcius resulta:" + resultado;
+            }
+        }
+        function convertir_a_farenheit(){
+            let grados = parseFloat(document.getElementById("grados").value);
+            let resultado = grados * 1.8 + 32;
+            if(isNaN(resultado)){
+            document.getElementById("resultado").innerHTML = "No es un numero";
+            }
+            else
+            {
+            document.getElementById("resultado").innerHTML = "La conversión a farenheit resulta:" + resultado;
+            }
+        }
+    </script>
+</body>
+</html>
