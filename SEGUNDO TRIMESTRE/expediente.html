@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente</title>
+</head>
+<body>
+    <h1>Calculadora de media aritmética</h1>
+    <p>
+    Introduce tu numero de asignaturas aprovadas:
+    <input type="text" id="aprovados" placeholder="Introduce n apro">
+    </p>
+    <p>
+    Introduce tu número de asignaturas suspensas:
+    <input type="text" id="suspensos" placeholder="Introduce n susp">
+    </p>
+    <button onclick="marit()">Calcular MA</button>
+    <p id="resultado"></p>
+    <script>
+        function marit(){
+            let aprovados = parseFloat(document.getElementById("aprovados").value);
+            let suspensos = parseFloat(document.getElementById("suspensos").value);
+            let resultado = ((aprovados/(aprovados+suspensos))*100);
+            if(isNaN(suspensos) || isNaN(aprovados) || aprovados<0 || suspensos<0){
+            document.getElementById("resultado").innerHTML = "Datos erroneos";
+            }
+            else
+            {
+            document.getElementById("resultado").innerHTML = "Tu media aritmética es de un " + resultado + "% de aprovados";
+            }
+        }
+    </script>
+</body>
+</html>

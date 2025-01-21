@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par e Impar</title>
+</head>
+<body>
+    <h1>Calculadora de numero par o impar</h1>
+    <p>
+        Introduce el número deseado:
+        <input type="text" id="numero" placeholder="Introduce número">
+        </p>
+        <button onclick="PI()">Calcular</button>
+        <p id="resultado"></p>
+    <script>
+        function PI(){
+        let numero = parseFloat(document.getElementById("numero").value);
+        let resultado = numero % 2
+        if(resultado == 1){
+        document.getElementById("resultado").innerHTML = "El número introducido es impar";
+        } else {
+        document.getElementById("resultado").innerHTML = "El número introducido es par";
+        }
+        }
+    </script>
+</body>
+</html>
