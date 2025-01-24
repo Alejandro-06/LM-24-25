@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta cifras</title>
+</head>
+<body>
+    <h1>Contador de dígitos</h1>
+    <p>
+        Introduce el numero al que deseas contar las cifras:
+        <input type="text" id="numero" placeholder="Introduce n">
+        <button onclick="contar()">contar</button>
+        </p>
+        <p id="resultado"></p>
+        <script>
+            function contar(){
+            var numero = document.getElementById("numero").value;
+            if (isNaN(numero) || numero < 0 || numero % 1 !== 0) {
+                alert("Por favor, introduce un numero entero positivo");
+            }
+            else {
+                var cifras = numero.toString().length
+                document.getElementById("resultado").innerText = "El numero tiene " + cifras + " cifras."
+            }
+            }
+        </script>
+</body>
+</html>
