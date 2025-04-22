@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparto gastos</title>
+</head>
+<body>
+    <h1>Reparte gastos</h1>
+    Introduce un número positivo: 
+    <input type="text" id="anadir">
+    <button onclick="anadir()">Añadir</button>
+    <p>Introduce un número entero positivo para dividir: 
+    <input type="text" id="dividir">
+    <button onclick="dividir()">Divide</button></p>
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+    <script>
+    let array = [];
+    let total = 0;
+    function anadir(){
+        let gastos = parseFloat(document.getElementById("anadir").value);
+        let resultado = document.getElementById("resultado");
+        if(isNaN(gastos) || gastos<=0){
+            alert('Introduce valores validos')
+        } else {
+        array.push(gastos);
+        resultado.innerHTML = "Elementos en el array(gastos): [" + array + "]";
+        total = total + gastos
+        document.getElementById("resultado2").innerHTML = "Total gastado: " + total + "€";
+        }
+    }    
+    function dividir(){
+        let dividir = parseFloat(document.getElementById("dividir").value);
+        let resultado2 = total/dividir;
+        if(isNaN(dividir) || dividir<=0){
+            alert('Introduce valores validos')
+        } else {
+        document.getElementById("resultado2").innerHTML = "Total gastado: " + resultado2 + "€";
+        }
+
+    }
+    </script>
+</body>
+</html>
