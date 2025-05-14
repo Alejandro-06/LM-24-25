@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery 5</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h1>Introducción a JQuery</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias esse nulla consequuntur illo eius modi consectetur perspiciatis asperiores? Aliquid sed officia voluptatum omnis mollitia id iusto! Dolor mollitia nulla quasi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At blanditiis, ad tenetur saepe et eos nostrum fuga, odit repellat odio mollitia doloribus, beatae dolore animi aut modi quos voluptates. Unde.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae expedita a quibusdam delectus ullam vel assumenda! Neque, expedita perferendis modi magni sunt tempora eum eius earum ipsam quasi! Error.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos libero eveniet ratione at, sequi atque ipsa accusamus deleniti harum aliquam blanditiis consequuntur porro dolorem, explicabo doloribus, delectus magni quasi nam.</p>
+    <button id="boton1">Fade in</button>
+    <button id="boton2">Fade out</button>
+    <button id="boton3">Fade toggle</button>
+
+    <script>
+        $(document).ready(function(){
+            $(boton1).click(function(){
+            $("p").fadeIn();
+        })
+
+            $(boton2).click(function(){
+            $("p").fadeOut();
+        })
+
+        $(boton3).click(function(){
+            $("p").fadeToggle();
+        })
+        });
+    </script>
+</body>
+</html>
